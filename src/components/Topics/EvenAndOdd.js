@@ -23,7 +23,7 @@ class EvenAndOdd extends Component{ //create the class "EvenAndOdd" that extends
         for(let i = 0;i<inputArray.length;i++){
            inputArray[i] = Number(inputArray[i])//converting the string numbers to actual numbers
         }
-        console.log(inputArray)
+        // console.log(inputArray)
         for(let j = 0;j<inputArray.length;j++){//pushing the evens and odds to new arrays 
            if(inputArray[j]%2 === 0){
                 evArr.push(inputArray[j])
@@ -31,7 +31,7 @@ class EvenAndOdd extends Component{ //create the class "EvenAndOdd" that extends
                 odArr.push(inputArray[j])
            }
         }
-        console.log("New Array Outputs:", evArr,odArr)//checking the arrays prior to setting them to state
+        // console.log("New Array Outputs:", evArr,odArr)//checking the arrays prior to setting them to state
         this.setState({//setting state to display the separated arrays and clearing out the input field
             evenArray: evArr, 
             oddArray: odArr,
@@ -40,7 +40,7 @@ class EvenAndOdd extends Component{ //create the class "EvenAndOdd" that extends
     }
     
     render(){//RENDER IT!
-        console.log("EvenAndOdd State:",this.state)//put state related console logs here, otherwise they may not be accurate due to timing
+        // console.log("EvenAndOdd State:",this.state)//put state related console logs here, otherwise they may not be accurate due to timing
     return(//RETURN IT! HTML below, use {} around any JS
             //we need a containter, in this case we used a DIV. Listeners in this example are onClick and onChange
             //Both listeners use a JS arrow function to bind them ***ALWAYS BIND OR IT WONT WORK***
